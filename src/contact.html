@@ -1,0 +1,131 @@
+@@include("main.html")
+
+<head>
+    @@include("title-meta.html", {"title": "Contacts"})
+
+    <!-- Css -->
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    @@include("head-css.html")
+</head>
+
+@@include("body.html")
+@@include("preloader.html")
+@@include("navbar/navbar.html")
+
+<!-- Start Hero -->
+<section class="relative table w-full py-36 bg-[url('../../assets/images/company/aboutus.jpg')] bg-center bg-no-repeat">
+    <div class="absolute inset-0 bg-black opacity-75"></div>
+    <div class="container">
+        <div class="grid grid-cols-1 pb-8 text-center mt-10">
+            <h3 class="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">
+                Contact Us</h3>
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    <div class="absolute text-center z-10 bottom-5 right-0 left-0 mx-3">
+        <ul class="breadcrumb tracking-[0.5px] breadcrumb-light mb-0 inline-block">
+            <li
+                class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+                <a href="index.html">LDW Solutions</a>
+            </li>
+            <li class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
+                aria-current="page">Contact Us</li>
+        </ul>
+    </div>
+</section><!--end section-->
+<div class="relative">
+    <div
+        class="shape absolute right-0 sm:-bottom-px -bottom-[2px] left-0 overflow-hidden z-1 text-white dark:text-slate-900">
+        <svg class="w-full h-auto" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start Section-->
+<section class="relative md:py-24 py-16">
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+            <div class="text-center px-6 mt-6">
+                <div
+                    class="w-20 h-20 bg-primary/5 text-primary rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                    <i class="uil uil-envelope"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <h5 class="title h5 text-xl font-medium">Email</h5>
+                    <p class="text-slate-400 mt-3">Fell free to contact us for any question or suggestion.
+                    </p>
+
+                    <div class="mt-5">
+                        <a href="mailto:contacts@ldw.solutions"
+                            class="btn btn-link text-secondary dark:text-primary hover:text-primary after:bg-primary duration-500 ease-in-out">contacts@ldw.solutions</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center px-6 mt-6">
+                <div
+                    class="w-20 h-20 bg-primary/5 text-primary rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                    <i class="uil uil-map-marker"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <h5 class="title h5 text-xl font-medium">Location</h5>
+                    <p class="text-slate-400 mt-3">Rio de Janeiro <br> Brazil</p>
+                    <div class="mt-5">
+                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940837.3422395469!2d-44.69402600340606!3d-22.907990001697083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil!5e0!3m2!1sen!2spt!4v1684077780930!5m2!1sen!2spt"
+                            data-type="iframe"
+                            class="video-play-icon read-more lightbox btn btn-link text-secondary dark:text-primary hover:text-primary after:bg-primary duration-500 ease-in-out">View
+                            on Google map</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center px-6 mt-6">
+                <div
+                    class="w-20 h-20 bg-primary/5 text-primary rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                    <i class="uil uil-map-marker"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <h5 class="title h5 text-xl font-medium">Location</h5>
+                    <p class="text-slate-400 mt-3">Castelo Branco <br> Portugal</p>
+                    <div class="mt-5">
+                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98073.39796541707!2d-7.545507825805918!3d39.81161942572608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3d5c2895907fdb%3A0x1c706a2a55bb1e40!2sCastelo%20Branco!5e0!3m2!1spt-PT!2spt!4v1682973207587!5m2!1spt-PT!2spt"
+                            data-type="iframe"
+                            class="video-play-icon read-more lightbox btn btn-link text-secondary dark:text-primary hover:text-primary after:bg-primary duration-500 ease-in-out">View
+                            on Google map</a>
+                    </div>
+                </div>
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+
+</section><!--end section-->
+<!-- End Section-->
+
+<div class="container-fluid relative">
+    <div class="grid grid-cols-1">
+        <div class="w-full leading-[0] border-0">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98073.39796541707!2d-7.545507825805918!3d39.81161942572608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3d5c2895907fdb%3A0x1c706a2a55bb1e40!2sCastelo%20Branco!5e0!3m2!1spt-PT!2spt!4v1682973207587!5m2!1spt-PT!2spt"
+                style="border:0" class="w-full h-[500px]" allowfullscreen></iframe>
+        </div>
+    </div><!--end grid-->
+</div><!--end container-->
+
+@@include("footer/footer.html")
+@@include("cookies.html")
+@@include("back-top.html")
+@@include("switcher.html")
+
+<!-- JAVASCRIPTS -->
+<script src="assets/js/contact.js"></script>
+<script src="assets/libs/tobii/js/tobii.min.js"></script>
+<script src="assets/libs/feather-icons/feather.min.js"></script>
+@@include("script-file.html")
+<!-- JAVASCRIPTS -->
+</body>
+
+</html>

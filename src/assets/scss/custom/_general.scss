@@ -1,0 +1,31 @@
+/* // _general.scss */
+
+/*********************************/
+/*             General            */
+/*===============================*/
+p {
+    @apply leading-relaxed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    @apply leading-normal;
+}
+
+::selection {
+    @apply bg-secondary/90 text-white;
+}
+
+.quote {
+    @apply text-slate-400 w-fit self-end italic border-x-4 border-primary/90 rounded-tl-xl rounded-br-xl mt-3 p-3;
+}
