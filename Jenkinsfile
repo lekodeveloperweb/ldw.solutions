@@ -1,19 +1,20 @@
 pipeline {
     agent any
     stages {
-        stage('Build and test') {
+        stage('Build') {
             steps {
-                sh 'docker build -t ldw.solutions/site:latest .'
+                sh 'git submodule init && git submodule update --recursive'
+                sh 'docker compose -f docker-compose.site.yml build'
             }
         }
         stage('Cleaning up old containers') {
             steps {
-                sh 'docker rm -f ldw-site'
+                sh 'docker compose -f docker-compose.site.yml down --remove-orphans'
             }
         }
         stage('Run LDW solutions site') {
             steps {
-                sh 'docker run -d --network ldwsolutions --name ldw-site ldw.solutions/site:latest'
+                sh 'docker compose -f docker-compose.site.yml up -d'
             }
         }
     }
