@@ -84,7 +84,6 @@ function activateMenu() {
     var matchingMenuItem = null
     for (var idx = 0; idx < menuItems.length; idx++) {
       const menuItem = menuItems[idx]
-      debugger
       if (
         menuItem.href === window.location.href ||
         window.location.pathname.startsWith(menuItem.getAttribute("data-href"))
