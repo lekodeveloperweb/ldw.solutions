@@ -527,10 +527,10 @@ try {
   const counter = document.querySelectorAll(".counter-value")
   const speed = 2500 // The lower the slower
 
-  counter.forEach((counter_value) => {
+  counter.forEach((counter_value, i) => {
     const updateCount = () => {
       const target = Number(counter_value.getAttribute("data-target"))
-      const count = Number(counter_value.innerText())
+      const count = Number(counter_value.innerText)
 
       // Lower inc to slow and higher to slow
       var inc = target / speed
@@ -544,12 +544,11 @@ try {
         // Add inc to count and output in counter_value
         counter_value.innerText = (count + inc).toFixed(0)
         // Call function every ms
-        setTimeout(updateCount, 1)
+        setTimeout(updateCount, i === 0 ? 250 : 50)
       } else {
         counter_value.innerText = target
       }
     }
-
     updateCount()
   })
 } catch (err) {}
@@ -946,9 +945,9 @@ try {
 try {
   const Default = {
     defaultTabId: null,
-    activeClasses: "text-white bg-indigo-600",
+    activeClasses: "text-white bg-primary/80",
     inactiveClasses:
-      "hover:text-indigo-600 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-secondary/90",
+      "hover:text-primary/80 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-secondary/90",
     onShow: () => {},
   }
 
@@ -1502,7 +1501,7 @@ try {
 try {
   const Default = {
     alwaysOpen: false,
-    activeClasses: "bg-gray-50 dark:bg-secondary/90 text-indigo-600",
+    activeClasses: "bg-gray-50 dark:bg-secondary/90 text-primary/80",
     inactiveClasses: "text-dark dark:text-white",
     onOpen: () => {},
     onClose: () => {},

@@ -3,7 +3,7 @@
 /*===============================*/
 .filter-search-form {
     .icons {
-        @apply absolute top-[48%] -translate-y-1/2 left-3 z-1 text-indigo-600 text-[20px];
+        @apply absolute top-[48%] -translate-y-1/2 left-3 z-1 text-primary/80 text-[20px];
     }
 }
 .registration-form {
@@ -59,7 +59,7 @@
     @apply text-slate-400;
 }
 
-.choices__list--dropdown, 
+.choices__list--dropdown,
 .choices__list[aria-expanded] {
     @apply border-0 z-2;
 }

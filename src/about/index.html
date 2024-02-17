@@ -1,0 +1,213 @@
+@@include("main.html")
+
+<head>
+    @@include("title-meta.html", {"title": "Alex Leko Consulting"})
+
+    <!-- Css -->
+    @@include("head-css.html")
+</head>
+
+@@include("body.html")
+@@include("preloader.html")
+@@include("navbar/navbar.html")
+
+<!-- Start Home -->
+<section class="relative md:py-56 py-44 bg-[url('/assets/images/about/about-header.jpg')] bg-cover bg-no-repeat"
+    data-jarallax='{"speed": 0.5}' id="aboutme">
+    <div
+        class="absolute inset-0 h-full w-full bg-gradient-to-t to-transparent via-white/80 dark:via-slate-900/80 from-white dark:from-slate-900">
+    </div>
+
+    <div class="absolute text-center p-6 bottom-0 left-0 right-0">
+        <h5 class="text-slate-900 dark:text-white/70 font-semibold text-lg">I'm Alex Leko</h5>
+        <h3 class="md:text-3xl md:leading-normal text-2xl leading-normal font-bold">About Me</h3>
+    </div>
+</section><!--end section-->
+<!-- End Home -->
+
+<!-- Start -->
+<section class="relative md:py-24 py-16">
+    <div class="container">
+        <div class="grid grid-cols-1">
+            <div class="rounded-md shadow dark:shadow-gray-800 overflow-hidden">
+                <div class="md:flex items-center">
+                    <div class="relative md:shrink-0">
+                        <img src="@@webRoot/assets/images/about/leko.jpg"
+                            class="h-full w-full object-cover lg:w-[500px] md:w-80 lg:h-full md:h-96" alt="">
+                    </div>
+
+                    <div class="p-8">
+                        <div class="flex">
+                            <div class="w-1/2">
+                                <h2 class="text-3xl mb-2 font-bold">
+                                    <span class="counter-value" data-target="12">0</span>+
+                                </h2>
+                                <h6 class="text-slate-400 mb-0">Years of Experience</h6>
+                            </div>
+                            <div class="w-1/2">
+                                <h2 class="text-3xl mb-2 font-bold">
+                                    <span class="counter-value" data-target="100">0</span>+
+                                </h2>
+                                <h6 class="text-slate-400 mb-0">Total Projects Completed</h6>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-400 dark:text-white mt-6">I am a fullstack developer with more than 12
+                            years of experience working with various web technologies and frameworks. I
+                            have expertise in Angular, React, Vue, .NET, NodeJS, React Native, Ionic Framework, Flutter,
+                            Python, GoLang, and DevOps tools such as Docker, Jenkins, Kubernetes, Azure DevOps, AWS,
+                            GPC, Google Firebase. I have
+                            also worked in different
+                            industries such as e-commerce, education, health care, and finance. I am passionate about
+                            creating high-quality,
+                            user-friendly, and scalable web applications that meet the needs and expectations of the
+                            clients and users. I am always
+                            eager to learn new skills and technologies and to collaborate with other developers and
+                            stakeholders.</p>
+
+                        <a href="/contacts"
+                            class="btn btn-link text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-primary after:bg-primary dark:after:bg-white duration-500 ease-in-out mt-6">Get
+                            in touch <i class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div><!--end flex-->
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    <div class="container md:mt-24 mt-16">
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Languages and
+                Technologies</h3>
+
+            <p class="text-slate-400 max-w-2xl mx-auto">My specialty is creating captivating web experiences, scaling
+                systems to new heights, and delivering dependable
+                programs. I'm here to help you shine in the digital world with my enthusiasm for development and your
+                vision. Together,
+                we can achieve an outstanding result.
+            </p>
+        </div><!--end grid-->
+
+        <div class="grid relative lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-center gap-[30px]">
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/html-css-js.jpeg"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/angular.webp"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/react.png"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/vue.jpeg"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/csharp.jpeg"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/node.jpeg"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/python.png"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/golang.jpg"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/flutter.png"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/rn.jpeg"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/ionic.png"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/docker.png"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/jenkins.png"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/azure.png"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/aws.jpeg"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/firebase.png"
+                    class="h-[110px] w-[110px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/kubernetes.png"
+                    class="h-[140px] w-[150px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+
+            <div class="mx-auto">
+                <img src="@@webRoot/assets/images/technologies/gpc.png"
+                    class="h-[140px] w-[140px] grayscale hover:grayscale-0 duration-500 ease-in-out" alt="">
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    <div class="container md:mt-24 mt-16">
+        <div class="grid grid-cols-1 text-center">
+            <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Have Question ? Get in
+                touch!</h3>
+
+            <p class="text-slate-400 max-w-2xl mx-auto">I'm especially interested in building magical web experiences,
+                scaling systems up, and releasing reliable programs.</p>
+
+            <div class="mt-8">
+                <a href="/contacts"
+                    class="btn bg-primary hover:bg-primary/90 border-primary hover:border-primary/90 text-white rounded-md mr-2 mt-2"><i
+                        class="uil uil-phone"></i> Contact Me</a>
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End -->
+
+@@include("footer/footer.html")
+@@include("cookies.html")
+@@include("back-top.html")
+@@include("switcher.html")
+
+<!-- JAVASCRIPTS -->
+<script src="@@webRoot/assets/libs/jarallax/jarallax.min.js"></script>
+<script src="@@webRoot/assets/libs/feather-icons/feather.min.js"></script>
+@@include("script-file.html")
+<!-- JAVASCRIPTS -->
+</body>
+
+</html>

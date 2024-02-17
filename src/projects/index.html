@@ -1,0 +1,150 @@
+@@include("main.html")
+
+<head>
+	@@include("title-meta.html", {"title": "Alex Leko Consulting"})
+
+	<!-- Css -->
+	@@include("head-css.html")
+</head>
+
+@@include("body.html")
+@@include("preloader.html")
+@@include("navbar/navbar.html")
+
+<!-- Start Hero -->
+<section
+	class="relative table w-full py-32 lg:py-40 bg-[url('/assets/images/portfolio/bg-inner.jpg')] bg-no-repeat bg-center">
+	<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black"></div>
+	<div class="container">
+		<div class="grid grid-cols-1 pb-8 text-center mt-10">
+			<h3 class="mb-3 text-3xl leading-normal font-medium text-white">Portfolio & Works</h3>
+
+			<p class="text-slate-300 text-lg max-w-xl mx-auto">Explore our project portfolio and latest works to see how we
+				deliver innovative solutions for our clients.</p>
+		</div><!--end grid-->
+	</div><!--end container-->
+
+	<div class="absolute text-center z-10 bottom-5 right-0 left-0 mx-3">
+		<ul class="breadcrumb tracking-[0.5px] breadcrumb-light mb-0 inline-block">
+			<li
+				class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+				<a href="/">LDW Solutions</a>
+			</li>
+			<li class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
+				aria-current="page">Projects</li>
+		</ul>
+	</div>
+</section><!--end section-->
+<div class="relative">
+	<div
+		class="shape absolute right-0 sm:-bottom-px -bottom-[2px] left-0 overflow-hidden z-1 text-white dark:text-slate-900">
+		<svg class="w-full h-auto" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+		</svg>
+	</div>
+</div>
+<!-- End Hero -->
+
+<!-- Start Section-->
+<section class="relative md:py-24 py-16">
+	<div class="container">
+		<div class="grid grid-cols-1 items-center gap-[30px]">
+			<div class="filters-group-wrap text-center">
+				<div class="filters-group">
+					<ul class="mb-0 list-none container-filter-box filter-options">
+						<li
+							class="inline-block font-medium text-base mx-1.5 mb-3 py-1 px-3 cursor-pointer relative text-slate-400 border border-gray-100 dark:border-gray-700 rounded-md transition duration-500 active"
+							data-group="all">All</li>
+						<li
+							class="inline-block font-medium text-base mx-1.5 mb-3 py-1 px-3 cursor-pointer relative text-slate-400 border border-gray-100 dark:border-gray-700 rounded-md transition duration-500"
+							data-group="devops">DevOps</li>
+						<li
+							class="inline-block font-medium text-base mx-1.5 mb-3 py-1 px-3 cursor-pointer relative text-slate-400 border border-gray-100 dark:border-gray-700 rounded-md transition duration-500"
+							data-group="architecture">Architecture</li>
+						<li
+							class="inline-block font-medium text-base mx-1.5 mb-3 py-1 px-3 cursor-pointer relative text-slate-400 border border-gray-100 dark:border-gray-700 rounded-md transition duration-500"
+							data-group="maintain">Maintain</li>
+						<li
+							class="inline-block font-medium text-base mx-1.5 mb-3 py-1 px-3 cursor-pointer relative text-slate-400 border border-gray-100 dark:border-gray-700 rounded-md transition duration-500"
+							data-group="development">Development</li>
+						<li
+							class="inline-block font-medium text-base mx-1.5 mb-3 py-1 px-3 cursor-pointer relative text-slate-400 border border-gray-100 dark:border-gray-700 rounded-md transition duration-500"
+							data-group="mobile">Mobile</li>
+					</ul>
+				</div>
+			</div>
+		</div><!--grid-->
+	</div>
+
+	<div class="container-fluid relative">
+		<div id="grid" class="md:flex justify-center mx-auto mt-4">
+			@@include("project-card.html", {
+			"img": "/assets/images/portfolio/galeao.jpg",
+			"title": "People Access Management",
+			"imgAlt": "RioGaleao Airport logo",
+			"tags": "[\"development\", \"architecture\", \"devops\"]",
+			"href": "/projects/airport-rio-galeao",
+			"tagText": "Development | Architecture"
+			})
+			@@include("project-card.html", {
+			"img": "/assets/images/portfolio/cleanwatts-logo.png",
+			"title": "Clean Energy Management",
+			"imgAlt": "Clean Watts logo",
+			"tags": "[\"maintain\"]",
+			"href": "/projects/clean-watts",
+			"tagText": "Maintain"
+			})
+			@@include("project-card.html", {
+			"img": "/assets/images/portfolio/descomplica-logo.png",
+			"title": "Ed tech",
+			"imgAlt": "Descomplica company logo",
+			"tags": "[\"architecture\", \"development\", \"mobile\"]",
+			"href": "/projects/descomplica",
+			"tagText": "Architecture | Development | Mobile"
+			})
+			@@include("project-card.html", {
+			"img": "/assets/images/portfolio/ons-logo.jpg",
+			"title": "Energy Monitoring",
+			"imgAlt": "ONS company logo",
+			"tags": "[\"architecture\", \"development\", \"devops\"]",
+			"href": "/projects/ons",
+			"tagText": "Architecture | Development | Mobile",
+			"extraCss": "w-52"
+			})
+			@@include("project-card.html", {
+			"img": "/assets/images/portfolio/prudential.png",
+			"title": "Sales Success Planner App",
+			"imgAlt": "Prudential of Brazil company logo",
+			"tags": "[\"development\", \"mobile\"]",
+			"href": "/projects/prudential",
+			"tagText": "Development | Mobile"
+			})
+			@@include("project-card.html", {
+			"img": "/assets/images/portfolio/projectbox.svg",
+			"title": "Consultant Pattern",
+			"imgAlt": "Project Box logo",
+			"tags": "[\"architecture\", \"development\", \"mobile\", \"devops\"]",
+			"href": "/projects/project-box",
+			"tagText": "Architecture | Development | Mobile | DevOps",
+			"extraCss": "w-52"
+			})
+		</div>
+	</div><!--end container-->
+
+	@@include("call-to-action-contact.html")
+</section><!--end section-->
+<!-- End Section-->
+
+@@include("footer/footer.html")
+@@include("cookies.html")
+@@include("back-top.html")
+@@include("switcher.html")
+
+<!-- JAVASCRIPTS -->
+<script src="@@webRoot/assets/libs/shufflejs/shuffle.min.js"></script>
+<script src="@@webRoot/assets/libs/feather-icons/feather.min.js"></script>
+@@include("script-file.html")
+<!-- JAVASCRIPTS -->
+</body>
+
+</html>

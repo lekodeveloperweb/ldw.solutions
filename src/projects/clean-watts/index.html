@@ -1,0 +1,153 @@
+@@include("main.html")
+
+<head>
+    @@include("title-meta.html", {"title": "Projects - Clean Watts"})
+
+    <!-- Css -->
+    <link href="@@webRoot/assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    @@include("head-css.html")
+</head>
+
+@@include("body.html")
+@@include("preloader.html")
+@@include("navbar/navbar.html")
+
+<!-- Start Hero -->
+<section
+    class="relative table w-full py-32 lg:py-40 bg-[url('/assets/images/portfolio/cleanwatts-header.jpg')] bg-no-repeat bg-cover">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black"></div>
+    <div class="container">
+        <div class="grid grid-cols-1 pb-8 text-center mt-1.50">
+            <h3 class="mb-3 text-3xl leading-normal font-medium text-white">Architecture,
+                optimization, and maintenance</h3>
+
+            <ul class="list-none">
+                <li class="inline font-semibold text-white/60 mr-2"> <span class="text-white">Client :</span> Clean
+                    Watts</li>
+                <li class="inline font-semibold text-white/60"> <span class="text-white">Date :</span> May, 2022 to Nov,
+                    2022
+                </li>
+            </ul>
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    <div class="absolute text-center z-10 bottom-5 right-0 left-0 mx-3">
+        <ul class="breadcrumb tracking-[0.5px] breadcrumb-light mb-0 inline-block">
+            <li
+                class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+                <a href="/">LDW Solutions</a>
+            </li>
+            <li
+                class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+                <a href="/projects">Projects</a>
+            </li>
+            <li class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
+                aria-current="page">Detail</li>
+        </ul>
+    </div>
+</section><!--end section-->
+<div class="relative">
+    <div
+        class="shape absolute right-0 sm:-bottom-px -bottom-[2px] left-0 overflow-hidden z-1 text-white dark:text-slate-900">
+        <svg class="w-full h-auto" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start Section-->
+<section class="relative md:py-24 py-16">
+    <div class="container flex md:justify-center mb-10 md:mb-0">
+        <div class="grid grid-cols-1 md:w-1/2 my-auto">
+            <div class="tiny-single-item">
+                <div class="tiny-slide">
+                    <div class="m-2">
+                        <img src="@@webRoot/assets/images/portfolio/cleanwatts-logo.png"
+                            class="rounded-md shadow dark:shadow-gray-800" alt="">
+                    </div>
+                </div>
+                <div class="tiny-slide">
+                    <div class="m-2">
+                        <img src="@@webRoot/assets/images/portfolio/cleanwatts.png"
+                            class="rounded-md shadow dark:shadow-gray-800" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container md:mt-24 mt-1.56">
+        <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+            <div class="lg:col-span-4 md:col-span-5">
+                <div class="bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 p-6 rounded-md">
+                    <h5 class="text-lg font-semibold border-b border-gray-100 dark:border-gray-700 pb-3 mb-3">Project
+                        Info :</h5>
+                    <dl class="grid grid-cols-12 mb-0">
+                        <dt class="md:col-span-4 col-span-5 mt-2">Client :</dt>
+                        <dd class="md:col-span-8 col-span-7 mt-2 text-slate-400">Clean Watts</dd>
+
+                        <dt class="md:col-span-4 col-span-5 mt-2">Category :</dt>
+                        <dd class="md:col-span-8 col-span-7 mt-2 text-slate-400">Web Development</dd>
+
+                        <dt class="md:col-span-4 col-span-5 mt-2">Date :</dt>
+                        <dd class="md:col-span-8 col-span-7 mt-2 text-slate-400">May, 2022 to Nov, 2022</dd>
+
+                        <dt class="md:col-span-4 col-span-5 mt-2">Website :</dt>
+                        <dd class="md:col-span-8 col-span-7 mt-2 text-slate-400"><a
+                                href="https://www.cleanwatts.energy/" class="hover:text-primary"
+                                target="_blank">www.cleanwatts.energy</a>
+                        </dd>
+
+                        <dt class="md:col-span-4 col-span-5 mt-2">Location :</dt>
+                        <dd class="md:col-span-8 col-span-7 mt-2 text-slate-400">Coimbra, Portugal</dd>
+                    </dl>
+                </div>
+            </div><!--end col-->
+
+            <div class="lg:col-span-8 md:col-span-7">
+                <div class="lg:ml-5">
+                    <h4 class="text-xl font-semibold border-b border-gray-100 dark:border-gray-700 pb-3">Architecture,
+                        optimization, and maintenance
+                    </h4>
+                    <p class="mb-4">Key points of the project:</p>
+                    <ul class="text-slate-400 pl-4">
+                        <li class="list-disc mt-1.5">For this large customer in the Clean Energy area, this contract is
+                            intended for <b>architectural restructuring</b>, <b>
+                                performance
+                                improvement of APIs
+                            </b>, and Migration of Framework (<b>.NET Framework 4.8</b> for <b>.NET
+                                Core</b>).
+                            Some
+                            points of improvement made
+                            in legacy systems were the use of good practices in Entity Framework 6, improvement in the
+                            use of queries, Lambda
+                            functions, and <b>LINQ to SQL</b>.</li>
+                        <li class="list-disc mt-1.5">The migration strategy adopted began with uncoupling legacy code to
+                            specific libraries, replacing them with consumption
+                            with <b>Rests APIs</b>, and removing direct access to the database.
+                        </li>
+                    </ul>
+                </div>
+            </div><!--end col-->
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    @@include("call-to-action-contact.html")
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End Section-->
+
+@@include("footer/footer.html")
+@@include("cookies.html")
+@@include("back-top.html")
+@@include("switcher.html")
+
+<!-- JAVASCRIPTS -->
+<script src="@@webRoot/assets/libs/tiny-slider/min/tiny-slider.js"></script>
+<script src="@@webRoot/assets/libs/feather-icons/feather.min.js"></script>
+@@include("script-file.html")
+<!-- JAVASCRIPTS -->
+</body>
+
+</html>

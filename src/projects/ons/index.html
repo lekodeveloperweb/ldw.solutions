@@ -1,0 +1,196 @@
+@@include("main.html")
+
+<head>
+    @@include("title-meta.html", {"title": "Projects - ONS"})
+
+    <!-- Css -->
+    <link href="@@webRoot/assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    @@include("head-css.html")
+</head>
+
+@@include("body.html")
+@@include("preloader.html")
+@@include("navbar/navbar.html")
+
+<!-- Start Hero -->
+<section
+    class="relative table w-full py-32 lg:py-40 bg-[url('/assets/images/portfolio/ons-header.jpg')] bg-no-repeat bg-center">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black"></div>
+    <div class="container">
+        <div class="grid grid-cols-1 pb-8 text-center mt-1.50">
+            <h3 class="mb-3 text-3xl leading-normal font-medium text-white">ONS+ App</h3>
+
+            <ul class="list-none">
+                <li class="inline font-semibold text-white/60 mr-2"> <span class="text-white">Client :</span> ONS -
+                    Operador Nacional do Sistema Elétrico</li>
+                <li class="inline font-semibold text-white/60"> <span class="text-white">Date :</span> Aug, 2019 to Mar,
+                    2021
+                </li>
+            </ul>
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    <div class="absolute text-center z-10 bottom-5 right-0 left-0 mx-3">
+        <ul class="breadcrumb tracking-[0.5px] breadcrumb-light mb-0 inline-block">
+            <li
+                class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+                <a href="/">LDW Solutions</a>
+            </li>
+            <li
+                class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+                <a href="/projects">Projects</a>
+            </li>
+            <li class="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
+                aria-current="page">Detail</li>
+        </ul>
+    </div>
+</section><!--end section-->
+<div class="relative">
+    <div
+        class="shape absolute right-0 sm:-bottom-px -bottom-[2px] left-0 overflow-hidden z-1 text-white dark:text-slate-900">
+        <svg class="w-full h-auto" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start Section-->
+<section class="relative md:py-24 py-16">
+    <div class="container flex md:justify-center mb-10 md:mb-0">
+        <div class="grid grid-cols-1 md:w-1/2 my-auto">
+            <div class="tiny-single-item">
+                @@include("tiny-slide.html", {
+                "img": "/assets/images/portfolio/ons-1.webp",
+                "imgAlt": "Ons App Image1"
+                })
+                @@include("tiny-slide.html", {
+                "img": "/assets/images/portfolio/ons-2.webp",
+                "imgAlt": "Ons App Image 2"
+                })
+                @@include("tiny-slide.html", {
+                "img": "/assets/images/portfolio/ons-3.webp",
+                "imgAlt": "Ons App Image 3"
+                })
+                @@include("tiny-slide.html", {
+                "img": "/assets/images/portfolio/ons-4.webp",
+                "imgAlt": "Ons App Image 4"
+                })
+                @@include("tiny-slide.html", {
+                "img": "/assets/images/portfolio/ons-5.webp",
+                "imgAlt": "Ons App Image 5"
+                })
+                @@include("tiny-slide.html", {
+                "img": "/assets/images/portfolio/ons-6.webp",
+                "imgAlt": "Ons App Image 6"
+                })
+                @@include("tiny-slide.html", {
+                "img": "/assets/images/portfolio/ons-7.webp",
+                "imgAlt": "Ons App Image 7"
+                })
+            </div>
+        </div>
+    </div>
+
+    <div class="container md:mt-24 mt-1.56">
+        <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+            <div class="lg:col-span-4 md:col-span-5">
+                <div class="bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 p-6 rounded-md">
+                    <h5 class="text-lg font-semibold border-b border-gray-100 dark:border-gray-700 pb-3 mb-3">Project
+                        Info :</h5>
+                    <dl class="grid grid-cols-12 mb-0">
+                        <dt class="md:col-span-4 col-span-5 mt-2">Client :</dt>
+                        <dd class="md:col-span-8 col-span-7 mt-2 text-slate-400">ONS</dd>
+
+                        <dt class="md:col-span-4 col-span-5 mt-2">Category :</dt>
+                        <dd class="md:col-span-8 col-span-7 mt-2 text-slate-400">Mobile Development | Architecture</dd>
+
+                        <dt class="md:col-span-4 col-span-5 mt-2">Date :</dt>
+                        <dd class="md:col-span-8 col-span-7 mt-2 text-slate-400">Aug, 2019 to Mar,
+                            2021</dd>
+
+                        <dt class="md:col-span-4 col-span-5 mt-2">Website :</dt>
+                        <dd class="md:col-span-8 col-span-7 mt-2 text-slate-400"><a href="https://www.ons.org.br/"
+                                class="hover:text-primary" target="_blank">www.ons.org.br</a>
+                        </dd>
+
+                        <dt class="md:col-span-4 col-span-5 mt-2">Location :</dt>
+                        <dd class="md:col-span-8 col-span-7 mt-2 text-slate-400">Rio de Janeiro, BR</dd>
+                    </dl>
+                </div>
+            </div><!--end col-->
+
+            <div class="lg:col-span-8 md:col-span-7">
+                <div class="lg:ml-5">
+                    <h4 class="text-xl font-semibold border-b border-gray-100 dark:border-gray-700 pb-3">ONS+ App
+                    </h4>
+                    <p class="mb-4">Key points of the project:</p>
+                    <ul class="text-slate-400 pl-4">
+                        <li class="list-disc mt-1.5">Three main missions: improve the architecture of internal systems,
+                            deploy automation of publishing processes and code
+                            quality, and support the creation of mobile applications for the internal client (company
+                            employees).</li>
+                        <li class="list-disc mt-1.5">We created process automation with <b>Jenkins for CI/CD</b>,
+                            implemented
+                            unit tests with <b>Jasmine JS</b>, <b>karma JS for E2E</b> tests on
+                            the front-end, Unit tests with <p>NUnit for the .NET</p>, and <b>Specflow</b> for behavior
+                            testing
+                            (<b>BDD</b>)
+                            APIs on the backend, aiming
+                            at the quality of deliveries.
+                        </li>
+                        <li class="list-disc mt-1.5">Introduced the concept of <b>DDD</b> in software development for
+                            better
+                            software distribution and architecture.
+                        </li>
+                        <li class="list-disc mt-1.5">Introduced the concept of micro-apps, componentization for reuse,
+                            and standardization of visual identity for internal
+                            mobile applications.
+                        </li>
+                        <li class="list-disc mt-1.5">We created the automation of the build process of Android and
+                            <b>iOS Apps </b>, configuring a MacOS server as a slave in Jenkins
+                            to take advantage of the company's build pipelines.
+                            Implemented <b>E2E tests</b> in mobile apps with <b>Appium/Selenium</b>.
+                        </li>
+                        <li class="list-disc mt-1.5">I supported the creation of an internal app store for both
+                            <b>Android</b>
+                            and <b>iOS</b>.
+                        </li>
+                        <li class="list-disc mt-1.5">We create a data area to analyze the data collected with the
+                            <b>Google Firebase Analytics</b> stack
+                        </li>
+                        <li class="list-disc mt-1.5">We supported the process of implementation of the Beta Tester
+                            <b>Google Firebase
+                                Distribution</b>
+                            process.</li>
+                        <li class="list-disc mt-1.5">In the backend development, <b>.NET/C#/Web Apis</b> was used, in
+                            the front end <b>Angular
+                                5+</b> and the
+                            Mobile <b>Ionic Framework 2+</b> for
+                            access to the native APIs of mobile devices, both written with <b>Typescript</b>, <b>SQL
+                                Server</b> as a
+                            relational database, <b>Firebase Firestore</b> as a non-relational database.</li>
+                    </ul>
+                </div>
+            </div><!--end col-->
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    @@include("call-to-action-contact.html")
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End Section-->
+
+@@include("footer/footer.html")
+@@include("cookies.html")
+@@include("back-top.html")
+@@include("switcher.html")
+
+<!-- JAVASCRIPTS -->
+<script src="@@webRoot/assets/libs/tiny-slider/min/tiny-slider.js"></script>
+<script src="@@webRoot/assets/libs/feather-icons/feather.min.js"></script>
+@@include("script-file.html")
+<!-- JAVASCRIPTS -->
+</body>
+
+</html>
